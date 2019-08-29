@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1> <a href="/">Home</a>
+        <a href="/listtasks">List All Tasks</a>
+    </h1>
+    <form action="/newtask" method="POST">
+        Task Name:
+        <input type="text" name="taskname" /> </br>
+        Task Due:
+        <input type="date" name="taskdue" /> </br>
+        Task Description:
+        <input type="text" name="taskdesc" /> </br>
+        <button type="submit">Submit</button>
+    </form>
+    <h3><%= tasks%> tasks have been added</h3>
+</body>
+
+</html>
